@@ -5,8 +5,14 @@
         let sections = Math.floor(Math.random() * 3) + 1;
         charges += sections;
 
-        if(charges >= 8)
+        if(charges >= 8){
             charges = 0;
+            navigator.vibrate(400);
+        }
+        else{
+            navigator.vibrate(200);
+        }
+            
     }
 </script>
 
@@ -23,14 +29,14 @@
 
 <style>
     .meter{
-        width: 200px;
-        height: 25px;
+        width: 240px;
+        height: 30px;
         background-color: #b7b7b7;
         border: 2px solid #000;
     }
     .sections{
         width: 0px;
-        height: 25px;
+        height: 30px;
         background-color: #2a9fff;
     }
 
@@ -38,75 +44,75 @@
         position: relative;
         z-index: 3;
         background-color: #000;
-        height: 25px;
+        height: 30px;
         width: 1px;
     }
 
     .line1{
-        left: 25px;
-        top: -25px;
+        left: 30px;
+        top: -30px;
     }
 
     .line2{
-        left: 50px;
-        top: -50px;
+        left: 60px;
+        top: -60px;
     }
 
     .line3{
-        left: 75px;
-        top: -75px;
+        left: 90px;
+        top: -90px;
     }
 
     .line4{
-        left: 100px;
-        top: -100px;
+        left: 120px;
+        top: -120px;
     }
 
     .line5{
-        left: 125px;
-        top: -125px;
-    }
-
-    .line6{
         left: 150px;
         top: -150px;
     }
 
+    .line6{
+        left: 180px;
+        top: -180px;
+    }
+
     .line7{
-        left: 175px;
-        top: -175px;
+        left: 210px;
+        top: -210px;
     }
 
     .one{
-        width: 25px;
+        width: 30px;
     }
 
     .two{
-        width: 50px;
+        width: 60px;
     }
 
     .three{
-        width: 75px;
+        width: 90px;
     }
 
    .four{
-        width: 100px;
+        width: 120px;
    }
 
    .five{
-        width: 125px;
-   }
-
-   .six{
         width: 150px;
    }
 
+   .six{
+        width: 180px;
+   }
+
    .seven{
-        width: 175px;
+        width: 210px;
    }
 
     .eight{
-        width: 200px;
+        width: 240px;
     }
 
 </style>

@@ -1,10 +1,15 @@
 <script>
     let enabled = true;
     function changeShield(){
-        if(enabled)
+        if(enabled){
             enabled = false;
-        else
+            navigator.vibrate(200);
+        }
+        else{
             enabled = true;
+            navigator.vibrate(200);
+        }
+            
     }
 	
 </script>
@@ -13,8 +18,8 @@
 
 <style>
     img{
-        height: 35px;
-        width: 30px;
+        height: 55px;
+        width: 50px;
     }
 
     .removed{

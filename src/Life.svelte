@@ -3,10 +3,12 @@
     export let life = 20;
 
     function healing(){
+        navigator.vibrate(200);
         life++;
     }
 
     function damaging(){
+        navigator.vibrate(200);
         life--;
     }
 </script>
@@ -27,7 +29,7 @@
         align-items: center;
     }
     p {
-		font-size: 42px;
+		font-size: 60px;
 		font-weight: 500;
         user-select: none;
         margin: 0;

@@ -6,7 +6,7 @@
 
 <style>
     p {
-		font-size: 40px;
+		font-size: 50px;
 		font-weight: 500;
 		user-select: none;
 		margin: 0;

@@ -36,4 +36,14 @@
 		background-color: #804ab3;
 		transform: rotate(180deg);
 	}
+
+	@media only screen and (min-width: 1000px) {
+		.plants, .zombies{
+			width: 50%;
+			height: 100vh;
+		}
+		main{
+			display: flex;
+		}
+	}
 </style>
