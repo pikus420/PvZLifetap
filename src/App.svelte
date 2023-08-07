@@ -37,10 +37,10 @@
 		transform: rotate(180deg);
 	}
 
-	@media only screen and (min-width: 1000px) {
+	@media only screen and (min-width: 600px) {
 		.plants, .zombies{
 			width: 50%;
-			height: max(1000px, 100vh);
+			height: 100vh;
 		}
 		main{
 			display: flex;
