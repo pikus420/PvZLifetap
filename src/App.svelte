@@ -37,7 +37,7 @@
 		transform: rotate(180deg);
 	}
 
-	@media only screen and (min-width: 600px) {
+	@media only screen and (min-width: 300px) {
 		.plants, .zombies{
 			width: 50%;
 			height: 100vh;
