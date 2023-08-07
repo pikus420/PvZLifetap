@@ -40,7 +40,7 @@
 	@media only screen and (min-width: 1000px) {
 		.plants, .zombies{
 			width: 50%;
-			height: 100vh;
+			height: max(1000px, 100vh);
 		}
 		main{
 			display: flex;
