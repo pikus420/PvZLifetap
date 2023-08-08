@@ -38,6 +38,7 @@
         width: 0px;
         height: 30px;
         background-color: #2a9fff;
+        transition: linear 0.3s;
     }
 
     .lines{

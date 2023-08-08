@@ -1,5 +1,5 @@
 <script>
-    import LifeButton from './LifeButton.svelte';
+    import LifeButton from './NumberButton.svelte';
     export let life = 20;
 
     function healing(){

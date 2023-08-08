@@ -2,16 +2,23 @@
 	import Life from './Life.svelte';
 	import Shields from './Shields.svelte';
 	import BlockMeter from './BlockMeter.svelte';
+	import Mana from './Mana.svelte';
 </script>
 
 <main>
 	<div class="plants">
-		<Life />
+		<div class="counters">
+			<Life />
+			<Mana type="sun"/>
+		</div>
 		<BlockMeter />
 		<Shields />
 	</div>
 	<div class="zombies">
-		<Life />
+		<div class="counters">
+			<Life />
+			<Mana type="brain"/>
+		</div>
 		<BlockMeter />
 		<Shields />
 	</div>
@@ -30,12 +37,21 @@
 
 	.plants{
 		background-color: #81ff81;
+		transform: rotate(180deg);
 	}
 
 	.zombies{
 		background-color: #804ab3;
-		transform: rotate(180deg);
 	}
+
+	.counters{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 50px;
+	}
+
 
 	@media only screen and (min-width: 600px) {
 		.plants, .zombies{

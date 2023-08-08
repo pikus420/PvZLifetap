@@ -20,6 +20,7 @@
     img{
         height: 55px;
         width: 50px;
+        transition: linear 0.3s;
     }
 
     .removed{
