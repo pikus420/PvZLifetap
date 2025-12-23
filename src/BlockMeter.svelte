@@ -7,10 +7,13 @@
 
         if(charges >= 8){
             charges = 0;
-            navigator.vibrate(400);
         }
-        else{
-            navigator.vibrate(200);
+
+        if (typeof navigator.vibrate === "function"){
+            if(charges == 0)
+                navigator.vibrate(400);
+            else
+                navigator.vibrate(200);
         }
             
     }

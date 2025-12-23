@@ -4,12 +4,16 @@
     export let type;
 
     function addMana(){
-        navigator.vibrate(200);
+        if (typeof navigator.vibrate === "function"){
+            navigator.vibrate(200);
+        }
         mana++;
     }
 
     function substractMana(){
-        navigator.vibrate(200);
+        if (typeof navigator.vibrate === "function"){
+            navigator.vibrate(200);
+        }
         mana--;
     }
 </script>

@@ -3,12 +3,16 @@
     export let life = 20;
 
     function healing(){
-        navigator.vibrate(200);
+        if (typeof navigator.vibrate === "function"){
+            navigator.vibrate(200);
+        }   
         life++;
     }
 
     function damaging(){
-        navigator.vibrate(200);
+        if (typeof navigator.vibrate === "function"){
+            navigator.vibrate(200);
+        }   
         life--;
     }
 </script>

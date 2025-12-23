@@ -3,13 +3,14 @@
     function changeShield(){
         if(enabled){
             enabled = false;
-            navigator.vibrate(200);
         }
         else{
             enabled = true;
-            navigator.vibrate(200);
         }
-            
+
+        if (typeof navigator.vibrate === "function"){
+            navigator.vibrate(200);
+        }   
     }
 	
 </script>
